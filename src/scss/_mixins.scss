@@ -1,0 +1,175 @@
+@use "variables" as v;
+
+// Breakpoints
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin shapedivider {
+  @media screen and (min-width: 634px) {
+    @content;
+  }
+}
+
+// "laptop"
+@mixin desktop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+// Nav
+@mixin nav {
+  width: 100%;
+  background-color: v.$bg-nav;
+  position: absolute;
+  // label (The first "hamburger line"
+  &__toggle {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    margin-top: 30px;
+    width: 30px;
+    height: 5px;
+    background-color: v.$primary;
+    border-radius: 5px;
+    // The two other "lines"
+    &::before,
+    &::after {
+      content: "";
+      width: 30px;
+      height: 5px;
+      background-color: v.$primary;
+      position: absolute;
+      display: block;
+      border-radius: 5px;
+      transition: all 0.5s v.$menu-animation;
+    }
+    // Position of the "the other two lines"
+    &::before {
+      right: 0%;
+      margin-top: 11px;
+      transform: rotate(0deg);
+      transform-origin: left top;
+    }
+
+    &::after {
+      right: 0%;
+      margin-top: -11px;
+      transform: rotate(0deg);
+      transform-origin: left bottom;
+    }
+  }
+  // input
+  &__checkbox {
+    display: none;
+  }
+
+  // Menu-content
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 0);
+    &--link {
+      list-style-type: none;
+      display: none;
+      cursor: pointer;
+      border-bottom: 2px solid rgba(255, 255, 255, 0);
+      transition: border 0.2s;
+      &:hover {
+        border-color: white;
+      }
+      a {
+        text-decoration: none;
+        color: v.$primary;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  // Show Menu(hamburger)
+  #nav__checkbox:checked ~ label.nav__toggle::before {
+    transform: rotate(-45deg);
+  }
+
+  #nav__checkbox:checked ~ label.nav__toggle::after {
+    transform: rotate(45deg);
+  }
+
+  #nav__checkbox:checked ~ label.nav__toggle {
+    background-color: rgb(0, 0, 0, 0);
+  }
+
+  #nav__checkbox ~ label.nav__toggle {
+    transition: all 0.5s v.$menu-animation;
+  }
+
+  #nav__checkbox:checked ~ ul.nav__menu li {
+    display: block;
+  }
+}
+
+// Hero-section
+@mixin hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: v.$backprimary;
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+}
+
+//Display Content
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+// Footer
+@mixin footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+// Shade-Divider
+@mixin divider {
+  position: relative;
+  background: #2c3e50;
+  height: 0vh;
+  margin-top: -3px;
+  margin-bottom: 100px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top-width: 100px;
+    border-right-width: 160px;
+    border-bottom-width: 0;
+    border-left-width: 160px;
+    border-color: v.$backprimary transparent transparent transparent;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+  }
+}
