@@ -6,6 +6,9 @@
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
+  background-image: url("../assets/background2s.png");
+  background-repeat: repeat;
+  background-size: contain;
   background-color: v.$backsecondary;
 }
 
@@ -48,15 +51,10 @@
 .main--content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
+  width: 100%;
   min-height: 100vh;
   margin: 20px 0px 20px 0px;
   @include mixins.tablet {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
   }
   @include mixins.desktop {
   }
@@ -69,26 +67,37 @@
   min-height: 100vh;
   width: 100%;
   @include mixins.tablet {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     width: 100%;
   }
   @include mixins.desktop {
-    justify-content: center;
+    width: 100%;
   }
 }
 
+.content--portfolio {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  @include mixins.tablet {
+    width: 100%;
+  }
+  @include mixins.desktop {
+    width: 100%;
+  }
+}
+// display portfolio
 .card {
   @include mixins.card;
 }
-
+// footer
 .footer {
   background-color: v.$backprimary;
 
   @include mixins.footer;
 }
 
+// divider
 .triangle {
   @include mixins.divider;
   @include mixins.shapedivider {
