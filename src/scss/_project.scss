@@ -1,0 +1,30 @@
+@use "variables" as v;
+@use "mixins";
+
+// display portfolio
+.card {
+  @include mixins.card;
+}
+
+.card {
+  border: 1px solid teal;
+  padding: 20px;
+  position: relative;
+}
+.card::after,
+.card::before {
+  background-color: white;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
+.card::after {
+  bottom: -1px;
+  right: -1px;
+}
+.card::before {
+  top: -1px;
+  left: -1px;
+}

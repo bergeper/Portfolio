@@ -1,0 +1,76 @@
+@use "variables" as v;
+@use "mixins";
+
+// wrapper of whole page
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: auto;
+}
+
+// main container
+.main--content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+  min-height: 100vh;
+  margin: 0px 0px 20px 0px;
+  @include mixins.tablet {
+    flex-direction: row;
+  }
+  @include mixins.desktop {
+  }
+}
+
+.content--title {
+  &__title {
+    text-align: center;
+  }
+  background-color: v.$backprimary;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @include mixins.tablet {
+    width: 50%;
+  }
+  @include mixins.desktop {
+    width: 50%;
+  }
+}
+
+// content
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  @include mixins.tablet {
+    width: 50%;
+  }
+  @include mixins.desktop {
+    width: 50%;
+  }
+}
+
+// Triangle
+.custom-shape-divider-top-1675444319 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1675444319 svg {
+  position: relative;
+  display: block;
+  width: calc(156% + 1.3px);
+  height: 208px;
+}
+
+.custom-shape-divider-top-1675444319 .shape-fill {
+  fill: #417505;
+}
