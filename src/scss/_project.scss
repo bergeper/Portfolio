@@ -7,24 +7,34 @@
 }
 
 .card {
-  border: 1px solid teal;
-  padding: 20px;
+  min-height: 100px;
+  padding: 10px 20px;
   position: relative;
 }
+
 .card::after,
 .card::before {
-  background-color: white;
   content: "";
-  display: block;
-  height: 10px;
   position: absolute;
-  width: 10px;
+  pointer-events: none;
+  border: solid 4px;
+  border-color: v.$backprimary;
 }
+
 .card::after {
-  bottom: -1px;
-  right: -1px;
+  left: 15px;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  border-left: none;
+  border-right: none;
 }
+
 .card::before {
-  top: -1px;
-  left: -1px;
+  top: 15px;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  border-top: none;
+  border-bottom: none;
 }
