@@ -31,9 +31,22 @@
   width: 100%;
   padding-top: 1rem;
   @include mixins.tablet {
-    width: 50%;
+    width: 60%;
   }
   @include mixins.desktop {
-    width: 50%;
+    width: 60%;
   }
+}
+
+// Title animation
+.reveal--right {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal--right.active {
+  transform: translateY(0);
+  opacity: 1;
 }

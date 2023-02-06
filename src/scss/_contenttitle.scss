@@ -10,13 +10,13 @@
   padding-bottom: 20px;
   @include mixins.tablet {
     align-items: end;
-    width: 50%;
+    width: 40%;
   }
   @include mixins.desktop {
     &__width {
       width: 80%;
     }
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -50,6 +50,7 @@
     bottom: 15px;
     left: 0;
     right: 0;
+
     border-top: none;
     border-bottom: none;
   }
@@ -93,4 +94,50 @@
   right: 0;
   border-top: none;
   border-bottom: none;
+}
+
+// Arrow animation
+/*
+.arrow {
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+  display: flex;
+}
+.arrow::before {
+  content: "";
+  background: white;
+  width: 15px;
+  clip-path: polygon(
+    0 10px,
+    calc(100% - 15px) 10px,
+    calc(100% - 15px) 0,
+    100% 50%,
+    calc(100% - 15px) 100%,
+    calc(100% - 15px) calc(100% - 10px),
+    0 calc(100% - 10px)
+  );
+  animation: a1 1.5s 1 linear;
+}
+@keyframes a1 {
+  90%,
+  100% {
+    flex-grow: 1;
+  }
+}
+*/
+// Title animation
+.reveal--left {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal--left.active {
+  transform: translateX(0);
+  opacity: 1;
 }
