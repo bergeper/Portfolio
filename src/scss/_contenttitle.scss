@@ -134,10 +134,22 @@
   position: relative;
   transform: translateX(-150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 1s ease;
 }
 
 .reveal--left.active {
   transform: translateX(0);
+  opacity: 1;
+}
+
+.reveal--bg {
+  position: relative;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: 1s linear;
+}
+
+.reveal--bg.active {
+  transform: translateY(0);
   opacity: 1;
 }

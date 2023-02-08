@@ -24,7 +24,10 @@
 @mixin nav {
   width: 100%;
   background-color: v.$bg-nav;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+
   // label (The first "hamburger line"
   &__toggle {
     position: absolute;
