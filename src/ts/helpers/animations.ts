@@ -39,3 +39,15 @@ export const titleBGAni = () => {
     }
   }
 };
+
+let anis = `
+<section class="content--left reveal--bg">
+  <section
+    id="content--title"
+    class="content--title__width reveal--left"
+  ></section>
+</section>
+<section class="content--right reveal--right">
+  <section id="content--right"></section>
+</section>
+`;

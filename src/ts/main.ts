@@ -1,9 +1,18 @@
 import { contentAni, titleAni, titleBGAni } from "./helpers/animations";
 import { gitrepo } from "./services/GitRepo";
-import { createHtmlForRepos } from "./projects";
+import { createHtmlForPortfolio } from "./portfolio";
+import { createHtmlForAbout } from "./about";
+import { createHtmlForContact } from "./contact";
 
 gitrepo();
-createHtmlForRepos();
+
+function runApp() {
+  createHtmlForPortfolio();
+  createHtmlForAbout();
+  createHtmlForContact();
+}
+
+runApp();
 
 window.addEventListener("scroll", titleBGAni);
 window.addEventListener("scroll", titleAni);

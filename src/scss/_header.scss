@@ -35,9 +35,35 @@
 }
 
 .hero {
-  @include mixins.hero;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: v.$backprimary;
+  &__section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    &--heading {
+      font-size: 40px;
+      padding: 0;
+      margin: 0;
+    }
+  }
   @include mixins.tablet {
     display: flex;
     flex-direction: row-reverse;
+    &__section {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      &--heading {
+        font-size: 46px;
+        padding: 0;
+        margin: 0;
+      }
+    }
   }
 }
