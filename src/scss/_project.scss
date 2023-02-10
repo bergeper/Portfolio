@@ -4,4 +4,15 @@
 // display portfolio
 .card {
   @include mixins.card;
+  &__image {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    &--mobile {
+      width: 40%;
+    }
+    &--desktop {
+      width: 60%;
+    }
+  }
 }

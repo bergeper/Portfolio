@@ -3,9 +3,15 @@ import { Title } from "../models/Titles";
 export const titleContent: Title[] = [
   new Title(
     "My Work",
-    `As a front-end developer, I have developed dynamic and interactive designs through school projects, using HTML, CSS, 
-    JavaScript, and other technologies. These projects have given me experience in both simple landing pages and complex web apps, 
-    and I understand the significance of user experience. I am eager to continue improving my skills and creating innovative solutions.`
+    `As a student in school, 
+    I took advantage of the opportunities to work on various web application projects. 
+    These projects provided hands-on experience in using HTML, CSS, JavaScript, 
+    and in the near future, frameworks like React. 
+    I applied the knowledge I gained in class to create functional 
+    and hopefully visually appealing web pages. 
+    These projects not only helped me improve my web development skills, 
+    but also gave me the chance to collaborate with classmates and develop my teamwork 
+    and problem-solving abilities.`
   ),
   new Title(
     "About me",

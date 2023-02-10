@@ -15,7 +15,7 @@
 
 // "laptop"
 @mixin desktop {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     @content;
   }
 }
@@ -114,28 +114,6 @@
 
   #nav__checkbox:checked ~ ul.nav__menu li {
     display: block;
-  }
-}
-
-// Hero-section
-@mixin hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100%;
-  background-color: v.$backprimary;
-  &__section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    &--text {
-      font-size: 46px;
-      padding: 0;
-      margin: 0;
-    }
   }
 }
 

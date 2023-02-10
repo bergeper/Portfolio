@@ -11,19 +11,25 @@
 
 .main--content {
   background-color: v.$backprimary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 // main container foreach section
 .content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
   width: 100%;
   margin-bottom: 60px;
   @include mixins.tablet {
     flex-direction: row;
+    width: 100%;
   }
   @include mixins.desktop {
+    width: 80%;
   }
 }
 
@@ -33,10 +39,10 @@
   flex-direction: column;
   width: 100%;
   @include mixins.tablet {
-    width: 60%;
+    max-width: 60%;
   }
   @include mixins.desktop {
-    width: 70%;
+    max-width: 60%;
   }
 }
 

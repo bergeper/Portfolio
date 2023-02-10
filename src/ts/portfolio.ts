@@ -1,4 +1,4 @@
-import { repos } from "./services/reposTest";
+import { repos } from "./services/projects";
 import { titleContent } from "./services/titles";
 
 export const createHtmlForPortfolio = () => {
@@ -32,20 +32,27 @@ export const createHtmlForPortfolio = () => {
   for (let i = 0; i < repos.length; i++) {
     const card = document.createElement("div") as HTMLDivElement;
     const cardTitle = document.createElement("h3") as HTMLHeadingElement;
-    const cardImage = document.createElement("img") as HTMLImageElement;
+    const cardImages = document.createElement("div") as HTMLDivElement;
+    const cardImageMobile = document.createElement("img") as HTMLImageElement;
+    const cardImageDesktop = document.createElement("img") as HTMLImageElement;
     const cardContent = document.createElement("p") as HTMLParagraphElement;
 
     card.classList.add("card", "reveal--right");
     cardTitle.classList.add("card__title");
-    cardImage.classList.add("card__image");
+    cardImages.classList.add("card__image");
+    cardImageMobile.classList.add("card__image--mobile");
+    cardImageDesktop.classList.add("card__image--desktop");
     cardContent.classList.add("card__content");
 
-    cardTitle.innerHTML = repos[i].nameTest;
-    cardImage.src = repos[i].imgTest;
-    cardContent.innerHTML = repos[i].textTest;
+    cardTitle.innerHTML = repos[i].name;
+    cardImageMobile.src = repos[i].imgMobile;
+    cardImageDesktop.src = repos[i].imgDesktop;
+    cardContent.innerHTML = repos[i].text;
 
     card.appendChild(cardTitle);
-    card.appendChild(cardImage);
+    cardImages.appendChild(cardImageMobile);
+    cardImages.appendChild(cardImageDesktop);
+    card.appendChild(cardImages);
     card.appendChild(cardContent);
 
     contentRight.appendChild(card);
