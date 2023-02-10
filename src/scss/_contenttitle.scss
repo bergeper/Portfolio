@@ -59,7 +59,7 @@
 
 // display portfolio
 .card--info {
-  @include mixins.card;
+  @include mixins.cards;
 }
 
 // Title animation

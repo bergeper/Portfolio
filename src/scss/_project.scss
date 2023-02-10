@@ -2,17 +2,23 @@
 @use "mixins";
 
 // display portfolio
-.card {
-  @include mixins.card;
+.cards {
+  @include mixins.cards;
   &__image {
     display: flex;
     align-items: center;
     width: 100%;
     &--mobile {
       width: 40%;
+      &:hover {
+        scale: 1.1;
+      }
     }
     &--desktop {
       width: 60%;
+      &:hover {
+        scale: 1.1;
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-import { titleContent } from "./services/titles";
+import { titleContent } from "../services/titles";
 
 export const createHtmlForAbout = () => {
   const content = document.getElementById("about") as HTMLDivElement;
@@ -32,8 +32,8 @@ export const createHtmlForAbout = () => {
   const cardTitle = document.createElement("h3") as HTMLHeadingElement;
   const cardContent = document.createElement("p") as HTMLParagraphElement;
 
-  card.classList.add("card", "reveal--right");
-  cardTitle.classList.add("card__title");
+  card.classList.add("cards", "reveal--right");
+  cardTitle.classList.add("cards__title");
 
   cardTitle.innerHTML = "repos[i].nameTest";
   cardContent.innerHTML = "Dumtext";

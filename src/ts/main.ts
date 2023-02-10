@@ -1,8 +1,8 @@
 import { contentAni, titleAni, titleBGAni } from "./helpers/animations";
 import { gitrepo } from "./services/GitRepo";
-import { createHtmlForPortfolio } from "./portfolio";
-import { createHtmlForAbout } from "./about";
-import { createHtmlForContact } from "./contact";
+import { createHtmlForPortfolio } from "./pages/portfolio";
+import { createHtmlForAbout } from "./pages/about";
+import { createHtmlForContact } from "./pages/contact";
 
 gitrepo();
 

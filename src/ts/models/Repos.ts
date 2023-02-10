@@ -3,6 +3,7 @@ export class Repo {
     public name: string,
     public imgMobile: string,
     public imgDesktop: string,
-    public text: string
+    public text: string,
+    public github: string
   ) {}
 }

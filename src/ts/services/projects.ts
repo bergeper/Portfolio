@@ -5,19 +5,22 @@ export const repos: Repo[] = [
     "T-Shirt Co",
     "https://dl.dropboxusercontent.com/s/6wlbvuja0g67bdc/TShirtMobile.png?dl=0",
     "https://dl.dropboxusercontent.com/s/maanc6hhe4zdruc/TShirtDesk.png?dl=0",
-    "Web application projects are a crucial part of front-end development as they involve creating dynamic and interactive online experiences for users. These projects require a solid understanding of web technologies, including HTML, CSS, JavaScript, and others, to bring designs to life. Web applications can range from simple content-based sites to complex, data-driven platforms, and can be used for a variety of purposes, such as e-commerce, social networking, and more. By working on web application projects, front-end developers can enhance their skills and gain a deeper understanding of the development process, from design to deployment."
+    "Kek",
+    "https://github.com/bergeper/Tshirt_co"
   ),
   new Repo(
     "Todo App",
     "https://dl.dropboxusercontent.com/s/tzvyvozguozqc9u/TodoMobile.png?dl=0",
     "https://dl.dropboxusercontent.com/s/d7b5es7zy6p90x6/TodoDesk.png?dl=0",
-    "Web application projects are a crucial part of front-end development as they involve creating dynamic and interactive online experiences for users. These projects require a solid understanding of web technologies, including HTML, CSS, JavaScript, and others, to bring designs to life. Web applications can range from simple content-based sites to complex, data-driven platforms, and can be used for a variety of purposes, such as e-commerce, social networking, and more. By working on web application projects, front-end developers can enhance their skills and gain a deeper understanding of the development process, from design to deployment."
+    "Kek",
+    "https://github.com/bergeper/Todo"
   ),
   new Repo(
     "Omdb Search",
     "https://dl.dropboxusercontent.com/s/2i3hs10rsxssc5w/OmdbMobile.png?dl=0",
     "https://dl.dropboxusercontent.com/s/pxff6hes2yjmfyu/OmdbDesk.png?dl=0",
-    "Web application projects are a crucial part of front-end development as they involve creating dynamic and interactive online experiences for users. These projects require a solid understanding of web technologies, including HTML, CSS, JavaScript, and others, to bring designs to life. Web applications can range from simple content-based sites to complex, data-driven platforms, and can be used for a variety of purposes, such as e-commerce, social networking, and more. By working on web application projects, front-end developers can enhance their skills and gain a deeper understanding of the development process, from design to deployment."
+    "Kek",
+    "https://github.com/bergeper/Omdb-Search"
   ),
 ];
 
