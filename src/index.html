@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,41 +18,14 @@
     ></script>
     <link href="scss/main.scss" rel="stylesheet" />
     <script src="ts/main.ts" defer type="module"></script>
-    <title></title>
+    <title>P. Berge</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <nav class="nav"></nav>
-
-        <section class="hero">
-          <article class="hero__section">
-            <p class="hero__section--heading">Hi, I'm</p>
-            <p class="hero__section--heading">Per Berge</p>
-            <p class="hero__section--text">Soon to be Front-end Developer</p>
-            <article class="hero__section--link">
-              <a href="https://github.com/bergeper" class="" target="_blank"
-                >Github</a
-              >
-              /
-              <a
-                href="https://www.linkedin.com/in/per-berge-5b0b36250/"
-                class=""
-                target="_blank"
-                >LinkedIn</a
-              >
-            </article>
-          </article>
-        </section>
-        <section class="overlay"></section>
-      </header>
-      <main class="main--content">
-        <section id="portfolio" class="content">Portfolio</section>
-
-        <section id="about" class="content">About</section>
-
-        <section id="contact" class="content">Contact</section>
-      </main>
+    <header class="header" id="header"></header>
+    <main class="wrapper">
+      <section id="portfolio" class="content">Portfolio</section>
+      <section id="about" class="content">About</section>
+      <section id="contact" class="content">Contact</section>
       <div
         class="modal fade bd-example-modal-lg"
         id="mobileModal"
@@ -63,24 +37,7 @@
           <div class="modal-body imageModal" id="modalContainer">...</div>
         </div>
       </div>
-
-      <footer class="footer">
-        <section class="footer__left">
-          <p class="">@Kopyrajt</p>
-        </section>
-        <section class="footer__right">
-          <a href="https://github.com/bergeper" class="" target="_blank"
-            >Github</a
-          >
-          /
-          <a
-            href="https://www.linkedin.com/in/per-berge-5b0b36250/"
-            class=""
-            target="_blank"
-            >LinkedIn</a
-          >
-        </section>
-      </footer>
-    </div>
+    </main>
+    <footer class="footer" id="footer"></footer>
   </body>
 </html>

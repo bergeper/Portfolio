@@ -1,18 +1,12 @@
 @use "variables" as v;
 @use "mixins";
 
-// wrapper of whole page
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   width: auto;
-}
-
-.main--content {
   background-color: v.$backprimary;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -25,6 +19,7 @@
   min-height: 100vh;
   width: 100%;
   margin-bottom: 60px;
+  margin-top: 30px;
   @include mixins.tablet {
     flex-direction: row;
     width: 100%;
