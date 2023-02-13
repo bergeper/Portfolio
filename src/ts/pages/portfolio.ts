@@ -40,13 +40,13 @@ export const createHtmlForPortfolio = () => {
     const cardContent = document.createElement("p") as HTMLParagraphElement;
     const cardGithub: HTMLAnchorElement = document.createElement("a");
 
-    card.classList.add("cards", "reveal--right");
-    cardTitle.classList.add("cards__title");
-    cardImages.classList.add("cards__image");
-    cardImageMobile.classList.add("cards__image--mobile");
-    cardImageDesktop.classList.add("cards__image--desktop");
-    cardContent.classList.add("cards__content");
-    cardGithub.classList.add("cards__github");
+    card.classList.add("card", "reveal--right");
+    cardTitle.classList.add("card__title");
+    cardImages.classList.add("card__image");
+    cardImageMobile.classList.add("card__image--mobile");
+    cardImageDesktop.classList.add("card__image--desktop");
+    cardContent.classList.add("card__content");
+    cardGithub.classList.add("card__github");
 
     cardTitle.innerHTML = repos[i].name;
     cardImageMobile.src = repos[i].imgMobile;
@@ -54,7 +54,7 @@ export const createHtmlForPortfolio = () => {
     cardContent.innerHTML = repos[i].text;
     cardGithub.href = repos[i].github;
     cardGithub.target = "_blank";
-    cardGithub.innerHTML = "ICOOON";
+    cardGithub.innerHTML = `<i class="fa-brands fa-github"></i>`;
 
     cardImageMobile.addEventListener("click", () => {
       openMobileModal(repos[i]);

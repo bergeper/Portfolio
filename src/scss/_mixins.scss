@@ -25,10 +25,11 @@
 }
 
 //Display Content
-@mixin cards {
+@mixin card {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 10px 10px 100px 10px;
   padding: 10px;
 }

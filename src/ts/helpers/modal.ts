@@ -35,7 +35,7 @@ export const openDesktopModal = (image: Repo) => {
   imageModal.classList.add("modal");
   imageContainer.classList.add("imageModal");
   imageToDisplayContainer.classList.add("imageModal__image");
-  imageToDisplay.classList.add("imageModal__image--mobile");
+  imageToDisplay.classList.add("imageModal__image--desktop");
   imageToDisplay.src = image.imgDesktop;
   imageModal.style.display = "block";
 

@@ -32,8 +32,8 @@ export const createHtmlForContact = () => {
   const cardTitle = document.createElement("h3") as HTMLHeadingElement;
   const cardContent = document.createElement("p") as HTMLParagraphElement;
 
-  card.classList.add("cards", "reveal--right");
-  cardTitle.classList.add("cards__title");
+  card.classList.add("card", "reveal--right");
+  cardTitle.classList.add("card__title");
 
   cardTitle.innerHTML = "tihihihi";
   cardContent.innerHTML = "Dumtext";

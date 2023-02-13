@@ -1,4 +1,3 @@
-// https://api.github.com/users/bergeper/repos
 import axios from "axios";
 // import { IOmdbResponse } from "../models/IOmdbResponse";
 

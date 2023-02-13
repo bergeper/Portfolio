@@ -14,7 +14,11 @@ export const heroSection = () => {
   const heroSectionLinkOne: HTMLAnchorElement = document.createElement("a");
   const heroSectionLinkTwo: HTMLAnchorElement = document.createElement("a");
 
+  heroSectionLinkOne.classList.add("linkSM");
+  heroSectionLinkTwo.classList.add("linkSM");
+
   hero.classList.add("hero");
+  hero.id = "hero";
   heroSection.classList.add("hero__section");
   heroSectionLinkContainer.classList.add("hero__section--link");
   heroSectionHeadingTop.classList.add("hero__section--heading");
@@ -26,10 +30,10 @@ export const heroSection = () => {
   heroSectionHeadingBottom.innerHTML = "Soon to be Front-end Developer";
 
   heroSectionLinkOne.href = "https://github.com/bergeper";
-  heroSectionLinkOne.innerHTML = `Github`;
+  heroSectionLinkOne.innerHTML = `<i class="fa-brands fa-github"></i>`;
   heroSectionLinkOne.target = "_blank";
   heroSectionLinkTwo.href = "https://www.linkedin.com/in/per-berge-5b0b36250/";
-  heroSectionLinkTwo.innerHTML = "LinkedIn";
+  heroSectionLinkTwo.innerHTML = `<i class="fa-brands fa-linkedin"></i>`;
   heroSectionLinkTwo.target = "_blank";
 
   heroSection.appendChild(heroSectionHeadingTop);

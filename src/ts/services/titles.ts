@@ -2,7 +2,8 @@ import { Title } from "../models/Titles";
 
 export const titleContent: Title[] = [
   new Title(
-    "#myWork",
+    `<i class="fa-solid fa-person-digging"></i>
+    myWork`,
     `As a student in school, 
     I took advantage of the opportunities to work on various web application projects. 
     These projects provided hands-on experience in using HTML, CSS, JavaScript, 
@@ -14,8 +15,13 @@ export const titleContent: Title[] = [
     and problem-solving abilities.`
   ),
   new Title(
-    "#aboutMe",
-    "I am a front-end developer student from Åre seeking an internship opportunity to gain practical experience and enhance my skills in the field. I am eager to learn from industry professionals and contribute to real-world projects. Let's connect to discuss how I can add value to your team."
+    `<i class="fa-solid fa-person"></i>
+    aboutMe`,
+    "I am a front-end developer student from Åre currently living in Stockholm seeking an internship opportunity to gain practical experience and enhance my skills in the field. I am eager to learn from industry professionals and contribute to real-world projects. Let's connect to discuss how I can add value to your team."
   ),
-  new Title("#contactMe", "Get in contact with me"),
+  new Title(
+    `<i class="fa-solid fa-envelope"></i>
+    contactMe`,
+    "Get in contact with me"
+  ),
 ];

@@ -12,12 +12,15 @@
   align-items: center;
   &__logoContainer {
     &--logo {
-      padding-right: 10px;
+      text-decoration: none;
+      color: black;
+      padding-left: 10px;
+      font-size: 30px;
     }
   }
   &__linkContainer {
     &--link {
-      font-size: 14px;
+      font-size: 1.1rem;
       text-decoration: none;
       padding: 10px;
       color: black;

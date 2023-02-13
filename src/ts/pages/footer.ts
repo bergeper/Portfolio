@@ -12,12 +12,14 @@ export const createHtmlForFooter = () => {
   const footerRightLinkOne: HTMLAnchorElement = document.createElement("a");
   const footerRightLinkTwo: HTMLAnchorElement = document.createElement("a");
   footerRight.classList.add("footer__right");
+  footerRightLinkOne.classList.add("linkSM");
+  footerRightLinkTwo.classList.add("linkSM");
 
   footerRightLinkOne.href = "https://github.com/bergeper";
-  footerRightLinkOne.innerHTML = `Github`;
+  footerRightLinkOne.innerHTML = `<i class="fa-brands fa-github"></i>`;
   footerRightLinkOne.target = "_blank";
   footerRightLinkTwo.href = "https://www.linkedin.com/in/per-berge-5b0b36250/";
-  footerRightLinkTwo.innerHTML = "LinkedIn";
+  footerRightLinkTwo.innerHTML = `<i class="fa-brands fa-linkedin"></i>`;
   footerRightLinkTwo.target = "_blank";
 
   footerLeft.appendChild(footerLeftCopy);

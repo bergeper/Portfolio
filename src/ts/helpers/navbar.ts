@@ -6,11 +6,12 @@ export const navbar = () => {
   navContainer.classList.add("navi");
 
   const navLogoContainer: HTMLDivElement = document.createElement("div");
-  const navLogo: HTMLImageElement = document.createElement("img");
+  const navLogo: HTMLAnchorElement = document.createElement("a");
   navLogoContainer.classList.add("navi__logoContainer");
   navLogo.classList.add("navi__logoContainer--logo");
 
-  navLogo.src = "";
+  navLogo.href = "#hero";
+  navLogo.innerHTML = `<i class="fa-solid fa-mountain-sun"></i>`;
 
   const navLinkContainer: HTMLDivElement = document.createElement("div");
   const navLinkPortfolio: HTMLAnchorElement = document.createElement("a");
