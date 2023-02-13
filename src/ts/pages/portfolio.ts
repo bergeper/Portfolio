@@ -38,7 +38,7 @@ export const createHtmlForPortfolio = () => {
     const cardImageMobile = document.createElement("img") as HTMLImageElement;
     const cardImageDesktop = document.createElement("img") as HTMLImageElement;
     const cardContent = document.createElement("p") as HTMLParagraphElement;
-    const cardGithub = document.createElement("p") as HTMLParagraphElement;
+    const cardGithub: HTMLAnchorElement = document.createElement("a");
 
     card.classList.add("cards", "reveal--right");
     cardTitle.classList.add("cards__title");
@@ -52,7 +52,9 @@ export const createHtmlForPortfolio = () => {
     cardImageMobile.src = repos[i].imgMobile;
     cardImageDesktop.src = repos[i].imgDesktop;
     cardContent.innerHTML = repos[i].text;
-    cardGithub.innerHTML = repos[i].github;
+    cardGithub.href = repos[i].github;
+    cardGithub.target = "_blank";
+    cardGithub.innerHTML = "ICOOON";
 
     cardImageMobile.addEventListener("click", () => {
       openMobileModal(repos[i]);

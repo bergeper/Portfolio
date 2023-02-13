@@ -1,27 +1,37 @@
+@use "variables" as v;
+@use "mixins";
+
 .modal {
   display: none;
   position: fixed;
   z-index: 1;
   padding-top: 100px;
   width: 100%;
-  top: 0;
   height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.269);
+  top: 0;
+  // overflow: auto;
 }
 
 .imageModal {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  display: block;
   width: 100%;
-  &__image--mobile {
+  &__image {
     width: 100%;
-  }
-  &__image--desktop {
-    width: 135%;
+    height: auto;
+    @include mixins.tablet {
+      width: 70%;
+    }
+    @include mixins.desktop {
+      width: 50%;
+    }
+    &--mobile {
+      width: 100%;
+    }
+    &--desktop {
+      width: 100%;
+    }
   }
 }
 

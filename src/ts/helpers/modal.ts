@@ -5,14 +5,18 @@ const imageModal: HTMLDivElement = document.createElement("div");
 export const openMobileModal = (image: Repo) => {
   imageModal.innerHTML = "";
   const imageContainer: HTMLDivElement = document.createElement("div");
+  const imageToDisplayContainer: HTMLDivElement = document.createElement("div");
   const imageToDisplay: HTMLImageElement = document.createElement("img");
 
   imageModal.classList.add("modal");
   imageContainer.classList.add("imageModal");
+  imageToDisplayContainer.classList.add("imageModal__image");
   imageToDisplay.classList.add("imageModal__image--mobile");
   imageToDisplay.src = image.imgMobile;
   imageModal.style.display = "block";
-  imageContainer.appendChild(imageToDisplay);
+
+  imageToDisplayContainer.appendChild(imageToDisplay);
+  imageContainer.appendChild(imageToDisplayContainer);
   imageModal.appendChild(imageContainer);
 
   imageModal.onclick = function (e) {
@@ -25,14 +29,18 @@ export const openMobileModal = (image: Repo) => {
 export const openDesktopModal = (image: Repo) => {
   imageModal.innerHTML = "";
   const imageContainer: HTMLDivElement = document.createElement("div");
+  const imageToDisplayContainer: HTMLDivElement = document.createElement("div");
   const imageToDisplay: HTMLImageElement = document.createElement("img");
 
   imageModal.classList.add("modal");
   imageContainer.classList.add("imageModal");
+  imageToDisplayContainer.classList.add("imageModal__image");
   imageToDisplay.classList.add("imageModal__image--mobile");
   imageToDisplay.src = image.imgDesktop;
   imageModal.style.display = "block";
-  imageContainer.appendChild(imageToDisplay);
+
+  imageToDisplayContainer.appendChild(imageToDisplay);
+  imageContainer.appendChild(imageToDisplayContainer);
   imageModal.appendChild(imageContainer);
 
   imageModal.onclick = function (e) {
