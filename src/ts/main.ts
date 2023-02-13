@@ -10,12 +10,12 @@ import { createHtmlForFooter } from "./pages/footer";
 gitrepo();
 
 function runApp() {
+  navbar();
   heroSection();
   createHtmlForPortfolio();
   createHtmlForAbout();
   createHtmlForContact();
   createHtmlForFooter();
-  navbar();
 }
 
 runApp();

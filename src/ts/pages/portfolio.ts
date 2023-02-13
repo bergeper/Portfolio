@@ -1,3 +1,4 @@
+import { openMobileModal, openDesktopModal } from "../helpers/modal";
 import { Repo } from "../models/Repos";
 import { repos } from "../services/projects";
 import { titleContent } from "../services/titles";
@@ -54,16 +55,12 @@ export const createHtmlForPortfolio = () => {
     cardGithub.innerHTML = repos[i].github;
 
     cardImageMobile.addEventListener("click", () => {
-      createMobileModal(repos[i]);
+      openMobileModal(repos[i]);
     });
-    cardImageMobile.setAttribute("data-bs-toggle", "modal");
-    cardImageMobile.setAttribute("data-bs-target", "#mobileModal");
 
     cardImageDesktop.addEventListener("click", () => {
-      createDesktopModal(repos[i]);
+      openDesktopModal(repos[i]);
     });
-    cardImageDesktop.setAttribute("data-bs-toggle", "modal");
-    cardImageDesktop.setAttribute("data-bs-target", "#mobileModal");
 
     card.appendChild(cardTitle);
     cardImages.appendChild(cardImageMobile);
@@ -77,26 +74,4 @@ export const createHtmlForPortfolio = () => {
 
   content.appendChild(contentLeft);
   content.appendChild(contentRight);
-};
-
-const imageModal = document.getElementById("modalContainer") as HTMLDivElement;
-
-const createMobileModal = (image: Repo) => {
-  imageModal.innerHTML = "";
-
-  const imagePlaceHolder = document.createElement("img") as HTMLImageElement;
-  imagePlaceHolder.src = image.imgMobile;
-  imagePlaceHolder.classList.add("imageModal__image--mobile");
-
-  imageModal.appendChild(imagePlaceHolder);
-};
-
-const createDesktopModal = (image: Repo) => {
-  imageModal.innerHTML = "";
-
-  const imagePlaceHolder = document.createElement("img") as HTMLImageElement;
-  imagePlaceHolder.src = image.imgDesktop;
-  imagePlaceHolder.classList.add("imageModal__image--desktop");
-
-  imageModal.appendChild(imagePlaceHolder);
 };
