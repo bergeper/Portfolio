@@ -23,11 +23,11 @@ export const navbar = () => {
   navLinkContact.classList.add("navi__linkContainer--link");
 
   navLinkPortfolio.href = "#portfolio";
-  navLinkPortfolio.innerHTML = "#portfolio";
+  navLinkPortfolio.innerHTML = "#myWork";
   navLinkAbout.href = "#about";
-  navLinkAbout.innerHTML = "#about";
+  navLinkAbout.innerHTML = "#aboutMe";
   navLinkContact.href = "#contact";
-  navLinkContact.innerHTML = "#contact";
+  navLinkContact.innerHTML = "#contactMe";
 
   navLogoContainer.appendChild(navLogo);
 
