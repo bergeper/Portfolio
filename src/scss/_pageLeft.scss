@@ -1,0 +1,23 @@
+@use "variables" as v;
+@use "mixins";
+
+// display portfolio
+.card--info {
+  @include mixins.card;
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 900;
+  }
+  &__content {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  &__pointer {
+    font-size: 2rem;
+
+    @include mixins.tablet {
+      rotate: -90deg;
+      font-size: 2.5rem;
+    }
+  }
+}

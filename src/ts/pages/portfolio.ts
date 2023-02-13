@@ -46,7 +46,7 @@ export const createHtmlForPortfolio = () => {
     cardImageMobile.classList.add("card__image--mobile");
     cardImageDesktop.classList.add("card__image--desktop");
     cardContent.classList.add("card__content");
-    cardGithub.classList.add("card__github");
+    cardGithub.classList.add("linkSM");
 
     cardTitle.innerHTML = repos[i].name;
     cardImageMobile.src = repos[i].imgMobile;

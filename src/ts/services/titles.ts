@@ -34,9 +34,11 @@ export const titleContent: Title[] = [
     "I am a front-end developer student from Åre currently living in Stockholm seeking an internship opportunity to gain practical experience and enhance my skills in the field. I am eager to learn from industry professionals and contribute to real-world projects. Let's connect to discuss how I can add value to your team."
   ),
   new Title(
-    `<i class="fa-solid fa-envelope"></i>
+    `<i class="fa-solid fa-address-book"></i>
     contactMe`,
-    "Get in contact with me",
+    `Hey, want to connect with me? Don't hesitate!
+    <br>
+    Check out the details right here and hit me up!`,
     ""
   ),
 ];

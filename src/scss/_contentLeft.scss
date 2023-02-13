@@ -6,8 +6,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-bottom: 20px;
-
   @include mixins.tablet {
     align-items: end;
     width: 40%;
@@ -17,19 +15,6 @@
       width: 80%;
     }
     width: 40%;
-  }
-}
-
-// display portfolio
-.card--info {
-  @include mixins.card;
-  &__title {
-    font-size: 1.4rem;
-    font-weight: 900;
-  }
-  &__content {
-    font-size: 1.1rem;
-    font-weight: 500;
   }
 }
 
@@ -43,17 +28,5 @@
 
 .reveal--left.active {
   transform: translateX(0);
-  opacity: 1;
-}
-
-.reveal--bg {
-  position: relative;
-  transform: translateY(-100px);
-  opacity: 0;
-  transition: 1s linear;
-}
-
-.reveal--bg.active {
-  transform: translateY(0);
   opacity: 1;
 }

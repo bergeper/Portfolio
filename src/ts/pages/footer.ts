@@ -6,7 +6,7 @@ export const createHtmlForFooter = () => {
   const footerLeft: HTMLDivElement = document.createElement("div");
   const footerLeftCopy: HTMLParagraphElement = document.createElement("p");
   footerLeft.classList.add("footer__left");
-  footerLeftCopy.innerHTML = "@Kopyrajt";
+  footerLeftCopy.innerHTML = "";
 
   const footerRight: HTMLDivElement = document.createElement("div");
   const footerRightLinkOne: HTMLAnchorElement = document.createElement("a");

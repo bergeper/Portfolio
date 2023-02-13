@@ -27,7 +27,9 @@ export const heroSection = () => {
 
   heroSectionHeadingTop.innerHTML = "Hi, I'm";
   heroSectionHeadingMiddle.innerHTML = "Per";
-  heroSectionHeadingBottom.innerHTML = "Soon to be Front-end Developer";
+  heroSectionHeadingBottom.innerHTML = `Soon to be Front-end Developer
+  <br>
+  <i>Portfolio is still a work in progress</i>`;
 
   heroSectionLinkOne.href = "https://github.com/bergeper";
   heroSectionLinkOne.innerHTML = `<i class="fa-brands fa-github"></i>`;
