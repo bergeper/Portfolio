@@ -50,11 +50,13 @@ export const createHtmlForPortfolio = () => {
 
     cardTitle.innerHTML = repos[i].name;
     cardImageMobile.src = repos[i].imgMobile;
+    cardImageMobile.alt = repos[i].name;
     cardImageDesktop.src = repos[i].imgDesktop;
+    cardImageDesktop.alt = repos[i].name;
     cardContent.innerHTML = repos[i].text;
     cardGithub.href = repos[i].github;
     cardGithub.target = "_blank";
-    cardGithub.innerHTML = `<i class="fa-brands fa-github"></i>`;
+    cardGithub.innerHTML = `See project<br><i class="fa-brands fa-github"></i>`;
 
     cardImageMobile.addEventListener("click", () => {
       openMobileModal(repos[i]);

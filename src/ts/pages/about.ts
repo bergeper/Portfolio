@@ -25,20 +25,37 @@ export const createHtmlForAbout = () => {
   contentLeft.appendChild(cardInfo);
 
   // right container
-  const contentRight = document.createElement("div") as HTMLDivElement;
+  const contentRight: HTMLDivElement = document.createElement("div");
   contentRight.classList.add("content--right");
 
-  const card = document.createElement("div") as HTMLDivElement;
-  const cardTitle = document.createElement("h3") as HTMLHeadingElement;
-  const cardContent = document.createElement("p") as HTMLParagraphElement;
+  const card: HTMLDivElement = document.createElement("div");
+  const cardTitle: HTMLHeadingElement = document.createElement("h3");
+  const cardImageContainer: HTMLDivElement = document.createElement("div");
+  const cardImage: HTMLImageElement = document.createElement("img");
+  const cardContent: HTMLParagraphElement = document.createElement("p");
 
   card.classList.add("card", "reveal--right");
   cardTitle.classList.add("card__title");
+  cardContent.classList.add("card__content");
+  cardImageContainer.classList.add("card__imageContainer");
+  cardImage.classList.add("card__imageContainer--image");
 
-  cardTitle.innerHTML = "repos[i].nameTest";
-  cardContent.innerHTML = "Dumtext";
+  cardImage.src =
+    "https://dl.dropboxusercontent.com/s/8uigscgtofmrjri/pbr.png.png?dl=0";
+  cardImage.alt = "A picture of me";
+  cardContent.innerHTML = `
+  I am currently seeking an internship 
+  opportunity to gain practical experience and enhance my skills in the field. 
+  I am eager to learn from industry professionals and contribute to real-world projects. 
+  Let's connect to discuss how I can add value to your team.
+  <br>
+  <br>
+  Check out my contact information down below!
+  `;
 
   card.appendChild(cardTitle);
+  cardImageContainer.appendChild(cardImage);
+  card.appendChild(cardImageContainer);
   card.appendChild(cardContent);
 
   contentRight.appendChild(card);

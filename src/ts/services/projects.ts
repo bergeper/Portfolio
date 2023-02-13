@@ -37,7 +37,7 @@ export const repos: Repo[] = [
     "https://dl.dropboxusercontent.com/s/pxff6hes2yjmfyu/OmdbDesk.png?dl=0",
     `
     In my JavaScript course, 
-    I retrieved data from the OMDB API using Fetch and/or Axios. 
+    I retrieved data from the OMDB RESTful API using Fetch and/or Axios. 
     The project taught me how to handle API calls and response data
      and display it in a meaningful way. It was challenging to work with 
      the API, but I learned a lot and successfully displayed data in my project. 

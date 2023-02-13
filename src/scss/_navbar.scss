@@ -16,6 +16,9 @@
       color: black;
       padding-left: 10px;
       font-size: 30px;
+      &:hover {
+        color: white;
+      }
     }
   }
   &__linkContainer {
@@ -24,6 +27,9 @@
       text-decoration: none;
       padding: 10px;
       color: black;
+      &:hover {
+        color: white;
+      }
     }
   }
 }
